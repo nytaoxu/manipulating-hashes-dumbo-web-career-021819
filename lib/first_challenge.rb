@@ -18,7 +18,7 @@ def first_challenge
     if key == "Freddy Mercury"
       value.each do |x, y|
         if x == :favorite_icecream_flavors
-          y.delete_if {}
+          y.delete_if { |z| z == "strawberry"}
         end
       end
     end
